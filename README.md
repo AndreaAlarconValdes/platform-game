@@ -9,5 +9,5 @@ Trip to Mars is a platform game developed with HTML, CSS and JavaScript in which
 
 
 Any doubts? Contact me!
-<a href="https://www.linkedin.com/in/andreaalarconvaldes/"><img align="right" width="20px" src="/imagenes/linkedin.png" alt="Andrea's LinkedIn" /></a>
-<a href="mailto:alarconvaldes.a@gmail.com"><img align="right" width="20px" src="/imagenes/mail.png" alt="Andrea's Contact" /></a>
+<a href="https://www.linkedin.com/in/andreaalarconvaldes/"><img width="40px" src="/imagenes/linkedin.png" alt="Andrea's LinkedIn" /></a>
+<a href="mailto:alarconvaldes.a@gmail.com"><img width="40px" src="/imagenes/mail.png" alt="Andrea's Contact" /></a>
