@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imagenes/meteorite.png" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Viaje a Marte</title>
+  </head>
+  <body>
+    <p id="countdown"></p>
+    <p id="score">
+      <img src="imagenes/alienconovni.png" alt="alien" /><span>0</span>
+    </p>
+
+    <div id="pantalla-inicio">
+      <div id="socials">
+        <a href="https://github.com/AndreaAlarcon99" target="_blank">
+          <img src="imagenes/github.png" alt="My Github" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/andreaalarconvaldes/"
+          target="_blank"
+          ><img src="imagenes/linkedin.png" alt="My Linkedin"
+        /></a>
+      </div>
+
+      <div id="game-intro">
+        <button id="start-button">Empezar juego</button>
+      </div>
+    </div>
+
+    <div id="game-over-div" class="hidden">
+      <img id="imagenPerder" src="imagenes/youlose.png" alt="has perdido" />
+    </div>
+
+    <div id="ganar" class="hidden">
+      <img src="imagenes/youwin.png" alt="Has ganado" />
+    </div>
+
+    <div id="canvas-game-div">
+      <canvas id="canvas" class="juego" width="1400" height="750"></canvas>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
