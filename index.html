@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" href="imagenes/meteorite.png" />
     <link rel="stylesheet" href="estilo.css" />
-    <title>Viaje a Marte</title>
+    <title>Trip to Mars</title>
   </head>
   <body>
     <p id="countdown"></p>
@@ -16,24 +21,47 @@
 
     <div id="pantalla-inicio">
       <div id="socials">
-        <a href="https://github.com/AndreaAlarcon99" target="_blank">
-          <img src="imagenes/github.png" alt="My Github" />
+        <a href="https://github.com/AndreaAlarconValdes" target="_blank">
+          <img src="imagenes/github.png" alt="Github" />
         </a>
 
         <a
           href="https://www.linkedin.com/in/andreaalarconvaldes/"
           target="_blank"
-          ><img src="imagenes/linkedin.png" alt="My Linkedin"
+          ><img src="imagenes/linkedin.png" alt="Linkedin"
+        /></a>
+        <a href="mailto:alarconvaldes.a@gmail.com" target="_blank"
+          ><img src="imagenes/mail.png" alt="Email"
         /></a>
       </div>
+      <div id="instrucciones-container">
+        <div class="instrucciones">
+          <h2>INSTRUCTIONS</h2>
+          <p>Usa las teclas de flecha para moverte:</p>
+          <ul>
+            <li>⬅️ Flecha izquierda: moverte hacia atrás</li>
+            <li>➡️ Flecha derecha: moverte hacia adelante</li>
+            <li>␣ Barra espaciadora: saltar</li>
+          </ul>
+          <p>
+            Evita caer al vacío o chocar contra meteoritos. Si lo haces,
+            perderás.
+          </p>
+          <p>
+            Tu objetivo es completar el circuito en menos de
+            <strong>2 minutos</strong> y atrapar todos los
+            <strong>ovnis</strong> que puedas.
+          </p>
+          <p>¡Buena suerte, astronauta!</p>
+        </div>
 
-      <div id="game-intro">
-        <button id="start-button">Empezar juego</button>
+        <button id="start-button">START GAME</button>
       </div>
     </div>
 
     <div id="game-over-div" class="hidden">
       <img id="imagenPerder" src="imagenes/youlose.png" alt="has perdido" />
+
     </div>
 
     <div id="ganar" class="hidden">
