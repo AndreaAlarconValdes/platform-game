@@ -37,7 +37,7 @@ const imagenPerder = document.getElementById("imagenPerder")
 // Crear contador tiempo
 const countDownEl = document.getElementById("countdown")
 
-const startingMinutes = 02;
+const startingMinutes = 2;
 let time = startingMinutes * 60
 
 function updateCountdown() {
@@ -132,7 +132,6 @@ document.body.addEventListener("keydown", (e) => {
   } else if (e.key == " " && jugador.saltando == false) {
     jugador.saltando = true
     jugador.velocidadY -= 15
-    console.log("saltando")
   }
 })
 
@@ -147,7 +146,6 @@ document.body.addEventListener("keyup", (e) => {
   } else if (e.key == " ") {
     // jugador.saltando = false
     jugador.velocidadY -= 0
-    console.log("no saltando")
   }
 })
 

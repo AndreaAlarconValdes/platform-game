@@ -1,108 +1,174 @@
+body {
+  background-color: black;
+}
+
 canvas {
-    z-index: 1;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-
-
 #pantalla-inicio {
-    z-index: 0;
-    padding-top: 350px;
-    padding-bottom: 350px;
-    margin-top: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-     background-image: url("imagenes/fondopantallainicio.png"); 
-    /* border: 2px black solid; */
-    background-size: 1300px, 400px;
-    background-position: center;
-
-
+  z-index: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("imagenes/main-bg.png");
+  background-size: cover;
+  background-position: center;
 }
-
-
 
 #socials {
-    z-index: 2;
-    position: absolute;
-    top: 15px;
-    left: 1200px;
-    margin: 20px;
-} 
+  z-index: 2;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  gap: 1rem;
+  display: flex;
+}
 
 #socials img {
-    z-index: 2;
-    height: 50px;
-    width: auto;
+  z-index: 2;
+  height: 40px;
+  width: auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 2px;
+  transition: 0.2s ease-in-out;
+  background-color: rgba(38, 67, 52, 0.606);
+  
 }
 
+#socials img:hover {
+    scale: 1.1;
+    background-color: rgba(154, 154, 154, 0.21); 
+
+}
+
+
+#instrucciones-container {
+  padding: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  background-color: #e9e9e9;
+
+  width: 450px;
+  height: 500px;
+  margin: auto;
+  animation: jello-vertical 0.9s linear both;
+
+}
+
+
+.instrucciones {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.instrucciones h2{
+  font-family: "Titan One", cursive;
+font-size: 35px;
+}
 #start-button {
-    z-index: 2;
-    font-size: 20px;
-    position: absolute;
-    top: 600px;
-    left: 1200px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    
-}     
-
-.hidden {
-    display: none;
+  z-index: 2;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: 16px;
+  padding: 0.5rem 2rem;
+  font-family: "Titan One", cursive;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  transition: 0.2s ease-in-out;
 }
-
-
+#start-button:hover {
+  scale: 1.1;
+}
+.hidden {
+  display: none;
+}
 
 #countdown {
-    z-index: 3;
+  z-index: 3;
 
-    position: absolute;
-    top: 65px;
-    left: 60px;
-    font-size: 35px;
-    color: orange;
+  position: absolute;
+  top: 65px;
+  left: 60px;
+  font-size: 35px;
+  color: orange;
 }
 
 #score {
-    z-index: 3;
+  z-index: 3;
 
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0px;
-    padding-right: 20px;
-    text-align: sp;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 #score span {
-    font-size: 25px;
-    color: orange;
-    align-self: center;
+  font-size: 25px;
+  color: orange;
+  align-self: center;
 }
 
 #score img {
-    z-index: 3;
+  z-index: 3;
 
-    width: 80px;
-    height: 80px;
-    align-self: flex-start;
+  width: 80px;
+  height: 80px;
+  align-self: flex-start;
 }
 
 #game-over-div button {
-    z-index: 2;
+  z-index: 2;
 
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
 }
+
+
+@keyframes jello-vertical {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
